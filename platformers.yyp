@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":1,
+  "defaultScriptType":0,
   "Folders":[
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprite","folderPath":"folders/Sprite.yy","name":"Sprite","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -43,8 +43,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Level_1","path":"rooms/Level_1/Level_1.yy",},},
     {"roomId":{"name":"Level_2","path":"rooms/Level_2/Level_2.yy",},},
+    {"roomId":{"name":"Level_1","path":"rooms/Level_1/Level_1.yy",},},
     {"roomId":{"name":"Level_3","path":"rooms/Level_3/Level_3.yy",},},
     {"roomId":{"name":"Level_4","path":"rooms/Level_4/Level_4.yy",},},
     {"roomId":{"name":"Level_5","path":"rooms/Level_5/Level_5.yy",},},
