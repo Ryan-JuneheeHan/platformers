@@ -1,6 +1,12 @@
 x_speed = 0; // reset horizontal speed 
 
-y_speed += .5; // add gravity to y_speed
+
+
+if (keyboard_check_pressed(vk_space)) {
+	grav = -grav;
+}
+
+y_speed += grav; // add gravity to y_speed
 if keyboard_check(vk_right) {  // if the right arrow key is pressed
 
     x_speed = walk_speed;  // set the horizontal speed to heidi's walk_speed
@@ -10,7 +16,8 @@ if keyboard_check(vk_right) {  // if the right arrow key is pressed
     x_speed = -walk_speed;  // set the horizontal speed to negative heidi's walk_speed, making her move left
 
 }
-move_and_collide(x_speed, y_speed, oSolid);
+
+
 if (place_meeting(x, y + 1, oSolid)) { // if heidi is on the ground
 
     if (keyboard_check_pressed(vk_up)) { // and the up arrow key is pressed
@@ -23,11 +30,12 @@ if (place_meeting(x, y + 1, oSolid)) { // if heidi is on the ground
 	}
 
 
-}if (place_meeting(x, y, oSpikes)) { // if heidi collides with the spikes
-
-    room_restart() // restart the level
-
 }
+if (place_meeting(x, y, oSpike)) 
+{ // if heidi collides with the spikes
+    room_restart() // restart the level
+}
+
 if (y > room_height or y < 0 or x > room_width or x < 0) { // if the player is outside of the room
 
     room_restart(); 
@@ -46,3 +54,6 @@ if keyboard_check(vk_right) {
     image_xscale = 1; // reset her sprite so she faces left
 
 }
+
+
+move_and_collide(x_speed, y_speed, oSolid);
