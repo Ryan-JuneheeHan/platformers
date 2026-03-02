@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"Sound1",
+  "%Name":"OST",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,7 +12,7 @@
   "conversionMode":0,
   "duration":16.150997,
   "exportDir":"",
-  "name":"Sound1",
+  "name":"OST",
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"Sound1.mp3",
+  "soundFile":"OST.mp3",
   "volume":1.0,
 }

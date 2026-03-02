@@ -1,1 +1,1 @@
-audio_play_sound(Sound1, 0, true);
+global.OST = audio_play_sound(OST, 1, true);
